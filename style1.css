@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+width:100%;
+height:200vh;
+background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(banner1.jpg);
+background-size: cover;
+background-position: center;
+}
+.navbar {
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	width: 100px;
+	cursor: pointer;
+
+}
+.navbar h2{
+	font-family: Lucida Handwriting;
+	color: #fff;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #999966;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+	width: 100%;
+
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 30%;
+	transform: :translateY(-50%);
+	text-align: left;
+	color: #fff;
+}
+.content h2{
+	font-size: 35px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	margin-left: 10px;
+
+}
+.content img {
+	float: bottom;
+	clear: right;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	border: solid white 1px;
+	padding: 2px;
+}
+.content h1{
+	font-size: 55px;
+	margin-top: 10px; 
+    width: 100%;
+	position: absolute;
+	top: 110%;
+	transform: :translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
